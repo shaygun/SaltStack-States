@@ -1,0 +1,5 @@
+# ip address for loop
+ip_addresses:
+{%- for i in range(5) %}
+  - 10.10.10.{{ i }}
+{%- endfor %}

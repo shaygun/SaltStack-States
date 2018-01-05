@@ -1,0 +1,19 @@
+#!/bin/bash
+wget -O bootstrap-salt.sh https://bootstrap.saltstack.com
+sudo sh bootstrap-salt.sh
+echo "master: 1.1.1.1" > /etc/salt/minion.d/master.conf
+echo "id: xx.test.com" >> /etc/salt/minion.d/master.conf
+
+/etc/init.d/salt-minion restart
+
+############install minion using PIP#############
+#install pip
+#curl https://bootstrap.pypa.io/get-pip.py | python
+# install salt
+#/usr/local/bin/pip install salt
+# configure salt
+#mkdir -p /etc/salt/minion.d
+#echo "master: 10.10.10.2" > /etc/salt/minion.d/master.conf
+#echo "web01" > /etc/salt/minion_id
+# Run salt
+#/usr/local/bin/salt-minion -d

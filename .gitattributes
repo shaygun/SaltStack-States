@@ -1,0 +1,7 @@
+*.gitattributes text
+.gitignore text
+*.md text
+*.sls linguist-language=SaltStack
+*.j2 linguist-language=SaltStack
+*.jinja linguist-language=SaltStack
+*.py linguist-language=SaltStack
