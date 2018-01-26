@@ -1,2 +1,15 @@
 master: localhost
-multiprocessing: false
+pki_dir: /etc/salt/pki/proxy
+cachedir: /var/cache/salt/proxy
+multiprocessing: False
+mine_enabled: True
+
+mine_functions:
+  net.ipaddrs: []
+  net.lldp: []
+  net.mac: []
+  net.arp: []
+  net.interfaces: []
+mine_interval: 1
+
+add_proxymodule_to_opts: False

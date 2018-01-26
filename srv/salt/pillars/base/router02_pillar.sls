@@ -3,4 +3,4 @@ proxy:
   driver: ios
   host: 10.10.10.102
   username: root
-  passwd: admin123
+  passwd: password
