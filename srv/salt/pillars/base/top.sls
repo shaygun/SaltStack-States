@@ -20,4 +20,7 @@ base:
     - vsrx-3_pillar
   vsrx-4:
     - vsrx-4_pillar
-    
+  arista-1:
+    - arista-1_pillar
+  arista-2:
+    - arista-1_pillar
